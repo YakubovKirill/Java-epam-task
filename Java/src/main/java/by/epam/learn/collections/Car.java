@@ -1,5 +1,7 @@
 package by.epam.learn.collections;
 
+import java.util.Objects;
+
 public class Car {
     private int id;
     private int carCost;
@@ -57,11 +59,11 @@ public class Car {
 
     @Override
     public String toString() {
-        return "\nCar {" +
+        return "Car {" +
                 "id=" + id +
+                ", carName='" + carName + '\'' +
                 ", carCost=" + carCost +
                 ", fuelRate=" + fuelRate +
-                ", carName='" + carName + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 ", numberOfSeats=" + numberOfSeats +
                 '}';
